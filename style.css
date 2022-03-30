@@ -32,33 +32,6 @@ body {
     color: #162c42;
 } 
 
-.conteiner {
-    max-width: 750px;
-    margin: 0 auto;
-    padding-top: 30px;
-}
-
-/* body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: normal;
-    background: #727f8d6b;
-    color: #162c42;
-    max-width: 750px;
-    margin: 0 auto;
-    padding-top: 30px;
-} */
-
-/* .conteiner {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: normal;
-    background: #727f8d6b;
-    color: #162c42;
-    max-width: 750px;
-    margin: 0 auto;
-    padding-top: 30px;
-} */
 
 h1 {
     margin-bottom: 10px;
@@ -73,7 +46,10 @@ h2 {
 .conteiner {
     margin: 0 auto;
     max-width: 750px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
+
 
 .foto {
     width: 150px;
