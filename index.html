@@ -7,69 +7,100 @@
     <meta name="keywords" content="zhukova, cv, resume">
     <meta name="description" content="Это сайт - резюме Ольги Жуковой">
     <title>Zhukova Resume</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <img src="foto.jpeg" alt="Ольга Жукова" width="150px">
-    <h1>Ольга Жукова</h1>
-    <p>Я начинающий <strong>веб-разработчик</strong></p>
-    <p>Я люблю <em>программировать и путешествовать</em></p>
-    <h2>Социальная сеть:</h2>
-    <a href="https://t.me/lelya_zhukova" target="_black">Telegram</a>
 
-    <h2>Мои хобби</h2>
+    <div class="conteiner">
 
-    <ul>
-        <li>Охота</li>
-        <li>Рыбалка</li>
-        <li>Играние на нервах</li>
-    </ul>
+        <div class="info">
+            <img src="foto.jpeg" alt="Ольга Жукова" class="foto">
 
-    <h2>Опыт работы</h2>
+            <div class="info-text">
+                <h1>Ольга Жукова</h1>
 
-    <table>
-        <thead>
-            <tr>
-                <th>Название</th>
-                <th>Должность</th>
-                <th>Год</th>
-            </tr>
-        </thead>
+                <p>Я начинающий <strong>веб-разработчик</strong></p>
 
-        <tbody>
-            <tr>
-                <td>Фриланс</td>
-                <td>Frontend</td>
-                <td>2022</td>
-            </tr>
+                <p>Я люблю <em>программировать и путешествовать</em></p>
 
-            <tr>
-                <td>Фриланс</td>
-                <td>Верстальщик</td>
-                <td>2022</td>
-            </tr>
-        </tbody>   
-    </table>
+                <h2>Социальная сеть:</h2>
 
-    <h2>Связаться со мной</h2>
+                <div class="telegram">
 
-    <form action="/">
-        <div>
-            <label for="name">Ваше имя:</label>
-            <input type="text" id="name" placeholder="Введите ваше имя">
+                    <div class="telegram-logo">
+                        <img src="telegram.png" alt="телеграм логотип" class="logo">
+                    </div>
+
+                    <a href="https://t.me/lelya_zhukova" target="_black">Telegram</a>
+                </div>
+            </div>
         </div>
 
-        <div>
-            <label for="email">Ваш email:</label>
-            <input type="email" id="email" placeholder="Введите ваш email">
+        <div class="card hobby">
+            <h2>Мои хобби</h2>
+
+            <ul class="list">
+                <li>Охота</li>
+                <li>Рыбалка</li>
+                <li>Играние на нервах</li>
+            </ul>
         </div>
 
-        <div>
-            <label for="message">Ваше сообщение:</label>
-            <br>
-            <textarea id="message" cols="20" rows="5"></textarea>
+        <div class="card experience">
+            <h2>Опыт работы</h2>
+
+            <table class="table">
+                <!-- <thead>
+                    <tr>
+                        <th>Название</th>
+                        <th>Должность</th>
+                        <th>Год</th>
+                    </tr>
+                </thead> -->
+
+                <tbody>
+                    <tr>
+                        <td>Фриланс</td>
+                        <td>Frontend</td>
+                        <td>2022</td>
+                    </tr>
+
+                    <tr>
+                        <td>Фриланс</td>
+                        <td>Верстальщик</td>
+                        <td>2022</td>
+                    </tr>
+                </tbody>   
+            </table>
         </div>
 
-        <input type="submit" value="Отправить!">
-    </form>
+        <div class="card connection">
+
+            <form action="/" class="form">
+                <h2>Связаться со мной</h2>
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" id="name" placeholder="Введите ваше имя">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Ваш email:</label>
+                        <input type="email" id="email" placeholder="Введите ваш email">
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Ваше сообщение:</label>
+                    <textarea id="message" cols="20" rows="5"></textarea>
+                </div>
+
+                <input class="btn" type="submit" value="Отправить!">
+            </form>
+        </div>
+    </div>
 </body>
 </html>
